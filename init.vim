@@ -17,22 +17,27 @@ Plug 'jparise/vim-graphql'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Yggdroot/indentLine'
 call plug#end()
+
+" misc settings
+set mouse=a " mouse god mode
+set number " display line numbers
+set splitbelow " more natty default splits
+set splitright
 
 " plugin cfgs
 source ~/.config/nvim/plug-config/fzf.vim
 source ~/.config/nvim/theme.vim
 source ~/.config/nvim/coc.vim
 
+" plugin specific settings
+let g:indentLine_enabled = 0 " off by default
+let g:indentLine_char = '|'
+let g:NERDTreeMouseMode=3 " always allow mouse in nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if last & only buffer is nerdtree
+
 " keybinds
 map <Space> <leader>
 map <C-n> :NERDTreeToggle<CR>
 map <leader>` :NERDTreeToggle<CR>
-
-" misc settings
-set mouse=a " mouse god mode
-set number " display line numbers
-let g:NERDTreeMouseMode=3 " always allow mouse in nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if last & only buffer is nerdtree
-set splitbelow
-set splitright

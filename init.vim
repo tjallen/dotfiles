@@ -12,6 +12,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'jparise/vim-graphql'
 Plug 'styled-components/vim-styled-components'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 source ~/.config/nvim/theme.vim

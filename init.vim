@@ -15,12 +15,16 @@ Plug 'styled-components/vim-styled-components'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
+" plugin cfgs
+source ~/.config/nvim/plug-config/fzf.vim
 source ~/.config/nvim/theme.vim
 source ~/.config/nvim/coc.vim
 
+" keybinds
 map <Space> <leader>
 map <C-n> :NERDTreeToggle<CR>
 
+" misc settings
 set mouse=a " mouse god mode
 set number " display line numbers
 let g:NERDTreeMouseMode=3 " always allow mouse in nerdtree

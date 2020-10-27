@@ -34,3 +34,5 @@ set mouse=a " mouse god mode
 set number " display line numbers
 let g:NERDTreeMouseMode=3 " always allow mouse in nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if last & only buffer is nerdtree
+set splitbelow
+set splitright

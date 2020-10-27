@@ -13,6 +13,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'jparise/vim-graphql'
 Plug 'styled-components/vim-styled-components'
 Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " plugin cfgs
@@ -23,6 +24,7 @@ source ~/.config/nvim/coc.vim
 " keybinds
 map <Space> <leader>
 map <C-n> :NERDTreeToggle<CR>
+map <leader>` :NERDTreeToggle<CR>
 
 " misc settings
 set mouse=a " mouse god mode

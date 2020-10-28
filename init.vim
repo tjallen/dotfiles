@@ -25,7 +25,7 @@ set mouse=a " mouse god mode
 set number " display line numbers
 set splitbelow " more natty default splits
 set splitright
-
+set linebreak " dont linebreak in the middle of a word
 " plugin cfgs
 source ~/.config/nvim/plug-config/fzf.vim
 source ~/.config/nvim/theme.vim

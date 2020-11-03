@@ -36,6 +36,7 @@ let g:indentLine_enabled = 0 " off by default
 let g:indentLine_char = '|'
 let NERDTreeShowHidden=1 " show .files
 let g:NERDTreeMouseMode=3 " always allow mouse in nerdtree
+let NERDTreeIgnore=['.DS_Store']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " exit vim if last & only buffer is nerdtree
 
 " keybinds

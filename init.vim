@@ -42,4 +42,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " keybinds
 map <Space> <leader>
 map <C-n> :NERDTreeToggle<CR>
-map <leader>` :NERDTreeToggle<CR>
+map <leader><Tab> :NERDTreeToggle<CR>
+map <leader>§ :NERDTreeToggle<CR>

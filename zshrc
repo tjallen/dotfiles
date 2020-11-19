@@ -11,8 +11,6 @@ unsetopt correct_all
 alias mongod="mongod --dbpath /users/thom/data/db/"
 
 alias vim="nvim"
-alias test="npm run test"
-alias start="npm start"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

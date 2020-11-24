@@ -18,6 +18,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
+Plug 'styled-components/vim-styled-components'
 call plug#end()
 
 " CoC extensions if we never need to reinstall. needs manually updating

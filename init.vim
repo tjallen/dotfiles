@@ -20,6 +20,19 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
 call plug#end()
 
+" CoC extensions if we never need to reinstall. needs manually updating
+let g:coc_global_extensions = [
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-css',
+  \ 'coc-snippets',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ ]
+
+" specify path to python 3. make sure this matches python alias in zshrc
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 " misc settings
 set mouse=a " mouse god mode
 set number " display line numbers

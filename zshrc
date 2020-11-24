@@ -11,6 +11,7 @@ unsetopt correct_all
 alias mongod="mongod --dbpath /users/thom/data/db/"
 
 alias vim="nvim"
+alias python=/usr/local/bin/python3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
